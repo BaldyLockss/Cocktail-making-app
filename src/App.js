@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css";
+
+//PAGE IMPORTS
+import Search from "./components/cocktail search/search";
+import Glass from "./components/cocktail glass/Glass";
+import Ingredients from "./components/cocktail ingredients/ingredients";
+import Method from "./components/Cocktail method/method";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <div className="wrapper">
+        <Search />
+        <Glass />
+        <Ingredients />
+        <Method />
+      </div>
     </div>
   );
 }

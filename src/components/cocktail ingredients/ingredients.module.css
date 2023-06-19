@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+}
+.container > h2 {
+  align-self: center;
+  font-size: var(--h2-text);
+  margin-bottom: var(--h-bottom);
+}
+.container__ingredients {
+  display: flex;
+  align-self: center;
+  width: var(--width);
+  padding: 10px;
+  background: var(--background);
+  background-blend-mode: difference;
+  border-radius: var(--container-left);
+  color: white;
+}
+.container__ingredients > ul {
+  padding-left: 15px;
+  margin: var(--ul-margin);
+}
+.container__ingredients > ul > li {
+  padding: var(--li-padding);
+  font-size: var(--li-text);
+}

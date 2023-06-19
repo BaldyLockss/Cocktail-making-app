@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+}
+.container > h2 {
+  align-self: center;
+  font-size: var(--h2-text);
+  margin-bottom: var(--h-bottom);
+}
+.method {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-self: center;
+  width: clamp(20em, 80vw, 40em);
+  height: inherit;
+  padding: 10px 0 120px 0;
+  background: var(--background);
+  background-blend-mode: difference;
+  border-radius: var(--container-right);
+  color: white;
+}
+.method > ul {
+  padding-right: 10px;
+  margin: var(--ul-margin);
+}
+.method > ul > li {
+  padding: var(--li-padding);
+  max-width: 30ch;
+  font-size: var(--li-text);
+}

@@ -1,0 +1,12 @@
+.container {
+  background: linear-gradient(
+    348.05deg,
+    rgba(17, 68, 71, 0.92) -15.6%,
+    #87598b 18.2%,
+    #94ad74 41.47%,
+    #96956b 62.4%,
+    #b92e2e 115.6%
+  );
+  position: relative;
+  /* background-blend-mode: color-burn; */
+}
